@@ -1,0 +1,42 @@
+Space Lanes
+Copyright (c) 2026 Wombyland. All rights reserved.
+
+PERMITTED
+
+You may download, install and play Space Lanes free of charge, for personal,
+non-commercial use, on any number of computers you own or control. You may make
+copies for backup purposes.
+
+NOT PERMITTED
+
+Without prior written permission from Wombyland, you may not:
+
+  - sell, rent, license or otherwise distribute the game or any part of it,
+    whether on its own or bundled with anything else;
+  - modify, translate, reverse engineer, decompile or disassemble the game, or
+    derive its source code, except to the extent this restriction is prohibited
+    by applicable law;
+  - extract, reuse or redistribute the artwork, models or textures;
+  - remove or alter any copyright, trademark or other proprietary notice.
+
+You are welcome to record, stream and publish video of the game, including
+monetised video, without seeking permission.
+
+THIRD-PARTY COMPONENTS
+
+The terms above apply to Space Lanes itself. They do NOT apply to the
+third-party artwork the game incorporates, which remains the property of its
+respective owners and carries its own licence terms. These are set out in
+ATTRIBUTION.md, which is distributed with the game and must be kept with any
+copy you make.
+
+NO WARRANTY
+
+The game is provided "as is", without warranty of any kind, express or implied,
+including but not limited to the warranties of merchantability, fitness for a
+particular purpose and non-infringement. In no event shall the copyright holder
+be liable for any claim, damages or other liability, whether in an action of
+contract, tort or otherwise, arising from, out of or in connection with the game
+or its use.
+
+Contact: https://www.wombyland.com/
