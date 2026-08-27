@@ -1,15 +1,13 @@
 # Space Lanes
 
-**A puzzle about shaping a wormhole.** You are an engineer in the Cartographer's
-Guild, Lane Charting Division. Each sector has beacons that must be threaded and
-hazards that must not be touched. Your job is to tune the parameters of a lane
-until it passes through every beacon cleanly.
+**Fit the curve. Chart the lane.** You are an engineer in the Cartographer's
+Guild. Explorers died placing the beacons that mark safe passage through hostile
+space, and your job is to thread a wormhole lane through every one of them — by
+tuning the coefficients of the equation that describes it.
 
 Made by [Wombyland](https://www.wombyland.com/). Windows, single player.
 
-![A lane under construction](screenshots/01-lane.png)
-
-![The sector map](screenshots/02-sector.png)
+![Tuning a lane through the beacons](screenshots/01-lane.png)
 
 ---
 
@@ -21,6 +19,8 @@ Made by [Wombyland](https://www.wombyland.com/). Windows, single player.
 |---|---|
 | **Installer** — `SpaceLanes-1.0-Setup.exe` | Recommended. Installs for the current user only, so it needs no administrator rights. Adds a Start menu entry and an optional desktop shortcut. |
 | **Portable zip** — `SpaceLanes-1.0-Windows.zip` | No installation. Unzip anywhere and run `Space Lanes.exe`. |
+
+Around 32 MB.
 
 ### Windows will warn you about this download
 
@@ -49,40 +49,68 @@ portable zip sometimes passes where the installer does not.
 
 ---
 
-## How it plays
+## What you actually do
 
-A lane is a curve through space, and you do not draw it. You **tune** it.
+The lane is a curve, and the curve is an equation. It is shown to you, live, at
+the bottom of the screen:
 
-Each sector gives you a set of parameters on the control deck. Moving them
-reshapes the lane — bending it, twisting it, stretching it through the sector.
-Somewhere in that space of possibilities is a shape that threads every beacon.
-Your job is to find it.
+```
+y = a·x² + b·x + c
+```
 
-**FIT** shows how close you are, as a percentage. It rises as the lane
-approaches a solution, so you can tell whether a change helped without guessing.
+Each coefficient has a slider, colour-matched to its term. Move **a** and the
+lane's curvature changes. Move **c** and the whole thing shifts. Somewhere in
+that space is a set of values where the lane passes through every beacon.
 
-**Beacons must be captured.** Hazards — mines, fields, obstacles — must be
-avoided. A lane that touches one is not a lane.
+**FIT** reads out how close you are as a percentage, so you always know whether
+a change helped. **ENGAGE** commits, and names any beacon you missed rather than
+simply refusing. Hazards must be avoided — a lane that touches a mine is not a
+lane.
 
-**ENGAGE** commits your solution. If any beacon is missed, the game tells you
-which, and you go back to tuning.
+It is coordinate geometry with the graph paper taken away and something at stake
+instead. You will not be asked to solve anything symbolically; you develop a feel
+for what each coefficient *does* by watching it happen.
 
-Sixteen sectors, each with its own shape and name — *First Light*, *The
-Serpent's Bend*, *Mine Alley*, *Threading the Needle*, *The Wake* — building from
-a gentle first curve to lanes that need real precision.
+![The sector map](screenshots/02-sector.png)
+
+---
+
+## Sixteen lanes, six sectors
+
+Each sector introduces a new kind of curve rather than a harder version of the
+last one.
+
+| Sector | |
+|---|---|
+| **I** | Basic Training — quadratics |
+| **II** | Curves & Inflections |
+| **III** | Into the Third Dimension |
+| **IV** | Spirals (Helices) |
+| **V** | Harmonics (Lissajous) |
+| **VI** | The Deep Charts |
+
+Levels unlock as you complete them, and each is rated out of **three stars** on
+how precisely you threaded it.
 
 ---
 
 ## When you get stuck
 
-Two levels of help, and the game does not hide them behind anything.
+Three levels of help, escalating, and none of them hidden.
 
-**NUDGE** finds whichever parameter is furthest from a working value and moves it
-toward one. It tells you which parameter it touched, so it teaches rather than
-simply solving. If everything is already close it says so rather than fiddling.
+| | |
+|---|---|
+| **SCAN** | Names the coefficient furthest from a solution and which way to move it. Free. |
+| **NUDGE** | Moves that coefficient part of the way there for you. Free. |
+| **REVEAL** | Draws the charted lane in gold beside yours. **Costs you stars.** |
 
-**REVEAL** draws the charted solution as a gold lane alongside yours. Use it when
-you want to see the answer's shape rather than derive it.
+Only the last one is penalised, so you can ask which direction to go as often as
+you like without being punished for it.
+
+![An incoming transmission](screenshots/03-transmission.png)
+
+Between levels, the Guild sends transmissions that explain what the next sector's
+mathematics is doing — in character, and in plain language.
 
 ---
 
@@ -90,10 +118,11 @@ you want to see the answer's shape rather than derive it.
 
 | Action | Control |
 |---|---|
-| Tune a parameter | Drag its slider on the control deck |
+| Tune a coefficient | Drag its slider |
 | Commit the lane | `ENGAGE` |
-| Hint — adjust the worst parameter | `NUDGE` |
-| Hint — show the charted lane | `REVEAL` |
+| Which way to move? | `SCAN` |
+| Move it for me | `NUDGE` |
+| Show me the answer | `REVEAL` — costs stars |
 | Back to survey defaults | `RESET` |
 | Return to the sector map | `SECTOR MAP` |
 | Orbit the view | Drag |
@@ -106,16 +135,18 @@ you want to see the answer's shape rather than derive it.
 Installed with the installer: **Settings → Apps → Installed apps → Space Lanes →
 Uninstall**. Used the zip: delete the folder.
 
-Settings and progress live in
-`%UserProfile%\AppData\LocalLow\Wombyland\Space Lanes` and are left alone by the
-uninstaller. Delete that folder by hand if you want them gone.
+Your progress — unlocked sectors and star ratings — is kept in the Windows
+registry under `HKEY_CURRENT_USER\Software\Wombyland\Space Lanes`, and the
+uninstaller leaves it alone. Delete that key by hand if you want a clean slate.
+The log file lives in
+`%UserProfile%\AppData\LocalLow\Wombyland\Space Lanes`.
 
 ---
 
 ## Reporting a problem
 
-Open an [issue](../../issues). What helps most: which sector you were on, your
-Windows version, and the log from
+Open an [issue](../../issues). What helps most: which sector and lane you were
+on, your Windows version, and the log from
 `%UserProfile%\AppData\LocalLow\Wombyland\Space Lanes\Player.log`.
 
 ---
@@ -128,7 +159,7 @@ browser.
 
 The skyboxes and spacecraft models are third-party work used under licence — see
 [ATTRIBUTION.md](ATTRIBUTION.md). Everything else, including the lane
-mathematics and level design, is original.
+mathematics, the level design and the procedural meshes, is original.
 
 This repository distributes the game only. It contains no source code — see
 [LICENSE.txt](LICENSE.txt) for terms.

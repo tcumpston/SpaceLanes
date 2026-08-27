@@ -7,15 +7,19 @@ wombyland.com; this is the same game as a native download.
 
 **The game**
 
-- Sixteen sectors, from *First Light* to *The Wake*, each a distinct lane-shaping
-  problem rather than a harder version of the last.
-- Lanes are tuned, not drawn: parameters on the control deck reshape a curve
-  through the sector, and a live FIT reading shows how close it is.
+- Sixteen lanes across six sectors, each sector introducing a new kind of curve
+  rather than a harder version of the last: quadratics, inflections, three
+  dimensions, helices, Lissajous harmonics, and the deep charts.
+- The lane is an equation, shown live with a slider per coefficient. Move `a`
+  and the curvature changes; move `c` and the lane shifts. A FIT percentage
+  reads out how close the curve comes to the beacons.
 - Beacons must be threaded and hazards avoided. ENGAGE names any beacon you
   missed rather than simply refusing.
-- Two levels of help, neither hidden: NUDGE moves the single worst parameter
-  toward a working value and says which one it touched; REVEAL draws the charted
-  lane in gold alongside yours.
+- Three levels of help, escalating and none hidden: SCAN names the coefficient
+  furthest off and which way to move it, NUDGE moves it part of the way for you,
+  and REVEAL draws the charted lane in gold — the only one that costs stars.
+- Three-star rating per lane on how precisely you threaded it, with sectors
+  unlocking as you go.
 - Free orbit camera and a sector map for moving between levels.
 - Transmissions between sectors carry the Cartographer's Guild framing.
 
