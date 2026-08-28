@@ -1,5 +1,19 @@
 # Changelog
 
+## 1.0.1 — 28 August 2026
+
+One change, and it is about where the game appears rather than what it does.
+
+- **Runs in a window instead of fullscreen.** Fullscreen handed the game to
+  whichever display Unity considered primary, which on a multi-monitor machine
+  was frequently the wrong one, and there was no way to move it. The window is
+  sized to roughly two thirds of the display and can simply be dragged.
+- The window is an exact 16:9 at any screen size, so the HUD and the lane
+  framing behave the same everywhere.
+
+Nothing about the puzzles, the lanes or the mathematics has changed. If 1.0 is
+working for you there is no need to update.
+
 ## 1.0 — 28 August 2026
 
 First public release for Windows. Space Lanes has been playable in a browser at

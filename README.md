@@ -17,8 +17,8 @@ Made by [Wombyland](https://www.wombyland.com/). Windows, single player.
 
 | | |
 |---|---|
-| **Installer** — `SpaceLanes-1.0-Setup.exe` | Recommended. Installs for the current user only, so it needs no administrator rights. Adds a Start menu entry and an optional desktop shortcut. |
-| **Portable zip** — `SpaceLanes-1.0-Windows.zip` | No installation. Unzip anywhere and run `Space Lanes.exe`. |
+| **Installer** — `SpaceLanes-1.0.1-Setup.exe` | Recommended. Installs for the current user only, so it needs no administrator rights. Adds a Start menu entry and an optional desktop shortcut. |
+| **Portable zip** — `SpaceLanes-1.0.1-Windows.zip` | No installation. Unzip anywhere and run `Space Lanes.exe`. |
 
 Around 32 MB.
 
@@ -46,6 +46,9 @@ portable zip sometimes passes where the installer does not.
 |---|---|
 | **Operating system** | Windows 10 or 11, 64-bit |
 | **Disk space** | Roughly 150 MB installed |
+
+The game opens in a window sized to about two thirds of your screen, which you
+can drag to whichever monitor you like.
 
 ---
 
